@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fd58"
+version = "0.1.0"
+requires-python = ">=3.8"
+authors = [
+  {name = "Firedancer Contributors", email = "firedancer-devs@jumptrading.com"},
+]
+maintainers = [
+  {name = "Firedancer Contributors", email = "firedancer-devs@jumptrading.com"},
+]
+description = "Fast Base58 32/64 by Firedancer"
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: C",
+  "Programming Language :: Cython"
+]
+
+[project.urls]
+Repository = "https://github.com/firedancer-io/python-fd58.git"
+"Bug Tracker" = "https://github.com/firedancer-io/python-fd58/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+fd58 = ["*.c", "*.h", "*.pyx", "*.pxd"]
