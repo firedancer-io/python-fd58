@@ -1,3 +1,6 @@
+/* Original source:
+   https://github.com/firedancer-io/firedancer/blob/main/src/ballet/base58/fd_base58.c */
+
 #include "fd_base58.h"
 #include <stdint.h>
 #include <string.h>

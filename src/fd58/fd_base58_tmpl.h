@@ -1,3 +1,6 @@
+/* Original source:
+   https://github.com/firedancer-io/firedancer/blob/main/src/ballet/base58/fd_base58_tmpl.c */
+
 /* Declares conversion functions to/from base58 for a specific size of
    binary data.
 
