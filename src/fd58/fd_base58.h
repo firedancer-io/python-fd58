@@ -1,6 +1,9 @@
 #ifndef HEADER_fd_base58_h
 #define HEADER_fd_base58_h
 
+/* Original source:
+   https://github.com/firedancer-io/firedancer/blob/main/src/ballet/base58/fd_base58.h */
+
 /* FD_BASE58_ENCODED_{32,64}_{LEN,SZ} give the maximum string length
    (LEN) and size (SZ, which includes the '\0') of the base58 cstrs that
    result from converting 32 or 64 bytes to base58. */
