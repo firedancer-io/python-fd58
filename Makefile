@@ -2,11 +2,11 @@
 
 # Allow overriding the Python interpreter from the command line:
 #   make PYTHON=python3.11 build
-PYTHON ?= python3
+PYTHON ?= $(shell command -v python3 || command -v python)
 PIP    ?= $(PYTHON) -m pip
 
 # Detect Python version (e.g. 3.11) and pkg-config name
-PYTHON_VERSION := $(shell $(PYTHON) -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')")
+PYTHON_VERSION := $(shell $(PYTHON) -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')
 PKG_CONFIG_NAME := python-$(PYTHON_VERSION)
 
 # Compiler/linker flags from pkg-config (requires pythonX.Y-dev package)
